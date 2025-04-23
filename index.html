@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Portfolio</title>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="left">
+      <a href="/">Matheskumar S Msc(cs)</a>
+    </div>
+
+    <div class="right">
+      <a href="http://github.com" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github"></i>
+        <span>Github</span>
+      </a>
+      
+      <a href="https://www.linkedin.com/in/mathes-kumar-b801b0284/" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>Linkedin</span>
+      </a>
+      
+      <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Email</span>
+      
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- SECTION 1: Hero -->
+    <section class="hero-section">
+      <div class="text">
+        <h2>Hi, I'm Matheskumar 👋</h2>
+        <p>I am a passionate and detail-oriented Front-End Developer with a strong academic foundation in Computer Science and hands-on experience gained through internships and academic projects. Skilled in HTML, CSS, JavaScript, and responsive design, I enjoy building visually appealing and user-friendly web interfaces. I am seeking an opportunity to work with a dynamic team where I can grow as a developer and contribute to creating impactful digital experiences</p>
+
+        <div class="links">
+          <a href="#Skills">
+            <i class="fa-solid fa-code"></i>
+            <span>Skills</span>
+          </a>
+          
+          <a href="#Project">
+            <i class="fa-solid fa-pen"></i>
+            <span>Project</span>
+          </a>
+          
+          <a href="#Contact">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contact</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="headshot">
+        <img src="images/img white.jpg" >
+      </div>
+    </section>
+
+    <!-- SECTION 2: Skills -->
+    <section id="skills" class="skills-section">
+      <h2>Skills</h2>
+      <div class="text">
+        I have a solid foundation in front-end development with hands-on experience using HTML, CSS, and JavaScript to create responsive and visually appealing web pages. I'm also comfortable working with Python for scripting and logic implementation. Additionally, I use Git and GitHub for version control and collaborative coding. I'm continuously improving my skills and exploring modern web development practices to grow as a developer.
+      </div>
+
+      <div class="cells">
+        <div class="cell">
+          <img src="images/html-logo.webp" alt="html logo">
+          <span>HTML</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/css-logo.webp" alt="css logo">
+          <span>CSS</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/javascript-logo.webp" alt="javascript logo">
+          <span>JavaScript</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/icons8-python-48.png" alt="icons8-python-48 logo">
+          <span>Python</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Project Experience -->
+    <section id="Project" class="Project Experience">
+      <h2>Project</h2>
+
+      <div class="group">
+        <div class="person-details">
+          <img src="images/project-management.png">
+          <h1>UG</h1>
+          <h3> Hospital Management System (Built using HTML, CSS, and JavaScript )</h3>
+          <li> Created a web app for managing hospital appointments and patient data.
+            Used HTML, CSS, and JavaScript for frontend; simulated real-time data.
+            Designed user-friendly interface for admin and patient users.</li>
+            <h1>PG </h1>
+            <h3>Virtual Lab System (Built using HTML, CSS, Django, python)</h3>
+            <li>Built a web-based platform with Django and Python to simulate digital labs.
+              Integrated user activity tracking and admin dashboards.
+              Designed responsive UI using HTML, CSS, and JavaScript.</li>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Contact -->
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+
+      <div class="group">
+        <div class="text">
+          I’m always open to new opportunities, collaborations, or just a friendly tech chat. Whether you have a job opportunity, a cool project idea, or simply want to say hi — feel free to reach out. I’d love to hear from you!.
+        </div>
+
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name">
+
+          <label for="email">Email</label>
+          <input type="email" id="email">
+
+          <label for="message">Message</label>
+          <textarea id="message" cols="30" rows="10"></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
