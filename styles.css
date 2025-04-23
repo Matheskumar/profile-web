@@ -154,7 +154,7 @@ nav .right a span {
   font-size: 18px;
 }
 
-/* SECTION 3: Testimony */
+/* SECTION 3: Project Experience */
 .testimony-section {
   padding: 0 50px;
   margin-bottom: 100px;
@@ -196,6 +196,11 @@ nav .right a span {
   flex: 8;
 }
 
+/* SECTION 3.1: Internship */
+.internship-section h2 {
+  text-align: center;
+  font-size: 35px;
+}
 /* SECTION 4: Contact */
 .contact-section {
   padding: 0 50px;
