@@ -147,6 +147,48 @@ body {
   transform: translateY(-5px);
 }
 
+.project-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 36px;
+  color: var(--accent-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.section-icon {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+
+.project-logo {
+  width: 40px;  /* Adjust this size as needed */
+  height: 40px;
+  border-radius: 5px; /* Optional, to make it rounded */
+  object-fit: cover;
+}
+
+.project-header h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.project-header .project-tag {
+  font-size: 14px;
+  color: #888;
+  font-weight: normal;
+}
+
 .gallery {
   display: flex;
   gap: 20px;
@@ -173,6 +215,23 @@ body {
   font-size: 20px;
   margin-bottom: 10px;
 }
+.section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 36px;
+  color: var(--accent-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.section-icon {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
 
 .internship-card h3 span {
   color: #888;

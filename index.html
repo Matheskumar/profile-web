@@ -56,24 +56,38 @@
   </section>
 
   <section id="projects" class="section project-section">
-    <h2>Projects</h2>
+    <h2>
+      <img src="images/project-management.png" alt="Projects Icon" class="section-icon">
+      Projects
+    </h2>
     <div class="project-card">
-      <h3>Hospital Management System <span class="project-tag">(UG Project)</span></h3>
+      <div class="project-header">
+        <img src="images/hospital.png
+        " alt="Hospital Management System Logo" class="project-logo">
+        <h3>Hospital Management System <span class="project-tag">(UG Project)</span></h3>
+      </div>
       <p>Developed a responsive web application for managing appointments and patient records using HTML, CSS, and JavaScript.</p>
     </div>
     <div class="project-card">
-      <h3>Virtual Lab System <span class="project-tag">(PG Project)</span></h3>
+      <div class="project-header">
+        <img src="images/online-learning.png" alt="Virtual Lab Logo" class="project-logo">
+        <h3>Virtual Lab System <span class="project-tag">(PG Project)</span></h3>
+      </div>
       <p>Built using Django and Python, this project simulates a digital lab environment with responsive UI, admin control, and real-time modules.</p>
       <div class="gallery">
-        <img src="images/project interface.jpg">
-        <img src="images/Experiment Module.jpg">
-        <img src="images/workenv module.jpg">
+        <img src="images/project interface.jpg" alt="Project Interface">
+        <img src="images/Experiment Module.jpg" alt="Experiment Module">
+        <img src="images/workenv module.jpg" alt="Work Environment Module">
       </div>
     </div>
   </section>
+  
 
   <section id="internship" class="section internship-section">
-    <h2>Internship Experience</h2>
+    <h2>
+      <img src="images/training.png" alt="Internship Icon" class="section-icon">
+      Internship Experience
+    </h2>    
     <div class="internship-card">
       <h3><i class="fas fa-building"></i> Liveware IT Training Institute <span class="year">(2023)</span></h3>
       <p>Worked on ML model development and testing using Python. Collaborated in a 5-member team for accuracy improvement and deployment.</p>
@@ -87,12 +101,13 @@
   <section id="contact" class="section">
     <h2>Contact Me</h2>
     <p class="section-intro">I’m open to job opportunities, collaborations, or just a friendly chat. Reach out through the form below or connect on LinkedIn!</p>
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name">
-      <input type="email" placeholder="Your Email">
-      <textarea placeholder="Your Message"></textarea>
+    <form class="contact-form" action="https://formspree.io/f/mkgrnyod" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
       <button type="submit">Send Message</button>
     </form>
+    
   </section>
 
   <footer>
