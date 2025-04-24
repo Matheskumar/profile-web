@@ -232,6 +232,29 @@ body {
   object-fit: contain;
 }
 
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background-color: var(--link-color);
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #375ad1;
+}
+
+.resume-icon {
+  width: 24px;
+  height: 24px;
+}
+
+
 
 .internship-card h3 span {
   color: #888;
