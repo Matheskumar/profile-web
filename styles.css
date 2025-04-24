@@ -1,335 +1,251 @@
 :root {
   --text-color: #1a1c20;
   --link-color: #4a76ee;
-  --background-color: #eeeff1;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
+  --background-color: #f4f6f8;
+  --section-bg: #ffffff;
+  --card-bg: #f9f9f9;
+  --accent-color: #ff5e57;
 }
 
 body {
+  margin: 0;
   font-family: 'Poppins', sans-serif;
-  color: var(--text-color);
   background-color: var(--background-color);
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-a {
-  color: var(--link-color);
-  text-decoration: none;
+  color: var(--text-color);
 }
 
 /* NAVBAR */
-nav {
+.navbar {
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  padding: 0 50px;
-  height: 80px;
+  padding: 20px 50px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-nav .left a {
+.navbar .logo {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.navbar .nav-links a {
+  margin-left: 20px;
   color: var(--text-color);
-  font-size: 22px;
-  font-weight: 600;
+  text-decoration: none;
+  font-weight: 500;
 }
 
-nav .right a {
-  color: var(--text-color);
-  margin: 0 10px;
+.navbar .nav-links a:hover {
+  color: var(--link-color);
 }
 
-nav .right a:last-child {
-  color: var(--background-color);
-  background-color: var(--text-color);
-  padding: 5px 15px;
-  border-radius: 5px;
-}
-
-nav .right a span {
-  margin-left: 5px;
-}
-
-/* SECTION 1: Hero */
-.hero-section {
+/* HERO SECTION */
+.hero {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 50px;
-  margin: 50px 0;
-  margin-bottom: 100px;
-  gap: 40px;
+  justify-content: space-between;
+  padding: 100px 50px;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
 }
 
-.hero-section .text {
-  flex: 5;
-}
-
-.hero-section .text h2 {
-  font-size: 45px;
-}
-
-.hero-section .text .links {
-  margin-top: 25px;
-}
-
-.hero-section .text .links a {
-  display: inline-block;
-  padding: 5px 10px;
-  border: 2px solid var(--link-color);
-  border-radius: 5px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  transition: .1s;
-}
-
-.hero-section .text .links a:hover {
-  color: var(--text-color);
-  border: 2px solid var(--text-color);
-}
-
-.hero-section .headshot {
-  flex: 2;
-  display: flex;
-  justify-content: right;
-}
-
-.hero-section .headshot img {
-  width: 350px;
-  border-radius: 50%;
-}
-
-/* SECTION 2: Skills */
-.skills-section {
-  padding: 0 50px;
-  margin-bottom: 100px;
-}
-
-.skills-section h2 {
-  text-align: center;
-  font-size: 35px;
-}
-
-.skills-section .text {
-  text-align: center;
+.hero-content h1 {
+  font-size: 48px;
   margin-bottom: 20px;
 }
 
-.skills-section .cells {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.hero-content p {
+  font-size: 18px;
+  max-width: 600px;
+  line-height: 1.6;
 }
 
-.skills-section .cells .cell {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-
-  width: 200px;
+.hero-buttons a {
+  display: inline-block;
+  margin: 10px 10px 0 0;
   padding: 10px 20px;
-  margin: 10px;
-  border: 1.5px solid #d3d3d3;
+  background-color: var(--accent-color);
+  color: #fff;
   border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
 }
 
-.skills-section .cells .cell img {
-  width: 30px;
-  height: 30px;
-  object-fit: contain;
-  border-radius: 2px;
+.hero-buttons a:hover {
+  background-color: #ff3b3b;
 }
 
-.skills-section .cells .cell span {
+.hero-image img {
+  width: 300px;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* UNIVERSAL SECTIONS */
+.section {
+  padding: 80px 50px;
+  background-color: var(--section-bg);
+  margin: 50px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 36px;
+  color: var(--accent-color);
+}
+
+.section-intro {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 40px;
   font-size: 18px;
 }
 
-/* SECTION 3: Project Experience */
-.testimony-section {
-  padding: 0 50px;
-  margin-bottom: 100px;
+/* SKILLS */
+.skills-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-.testimony-section h2 {
-  font-size: 40px;
-  margin-bottom: 30px;
-}
-
-.testimony-section .group {
+.skill {
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 10px;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: var(--card-bg);
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-.testimony-section .group .person-details {
-  text-align: center;
-  flex: 2;
+.skill img,
+.skill i {
+  width: 30px;
+  height: 30px;
 }
 
-.testimony-section .group .person-details img {
-  width: 200px;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 50%;
+/* PROJECTS */
+.projects-section .project-card {
+  background-color: var(--card-bg);
+  padding: 20px 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 2px 6px 14px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.projects-section .project-card:hover {
+  transform: translateY(-5px);
+}
+
+.gallery {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.gallery img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* INTERNSHIPS */
+.internship-section .internship-card {
+  background-color: var(--card-bg);
+  padding: 20px 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 2px 6px 14px rgba(0, 0, 0, 0.05);
+}
+
+.internship-card h3 {
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
-.testimony-section .group .person-details p {
-  font-weight: 600;
-}
-
-.testimony-section .group .person-details p:last-child {
+.internship-card h3 span {
+  color: #888;
   font-weight: normal;
+  font-size: 14px;
 }
 
-.testimony-section .group .text {
-  flex: 8;
+.internship-card ul {
+  padding-left: 20px;
 }
 
-/* SECTION 3.1: Internship */
-.internship-section h2 {
-  text-align: center;
-  font-size: 35px;
-}
-/* SECTION 4: Contact */
-.contact-section {
-  padding: 0 50px;
-  margin-bottom: 100px;
+.internship-card ul li {
+  margin-bottom: 8px;
+  line-height: 1.6;
 }
 
-.contact-section h2 {
-  font-size: 35px;
-}
-
-.contact-section .group {
-  display: flex;
-  gap: 50px;
-}
-
-.contact-section .group .text {
-  flex: 3;
-  margin-top: 20px;
-}
-
-.contact-section .group form {
-  flex: 3;
+/* CONTACT */
+.contact-form {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.contact-section .group form input,
-.contact-section .group form textarea {
-  font-family: 'Poppins', sans-serif;
-  border: 2px solid var(--link-color);
-  background-color: transparent;
-  padding: 10px;
-  margin-bottom: 15px;
-  outline: none;
-  resize: none;
-}
-
-.contact-section .group form button {
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
   font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
   font-family: 'Poppins', sans-serif;
-  color: #fff;
+}
+
+.contact-form button {
   background-color: var(--link-color);
+  color: white;
+  padding: 14px;
   border: none;
-  height: 50px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: .1s;
+  font-size: 16px;
+  transition: 0.3s ease;
 }
 
-.contact-section .group form button:hover {
-  filter: brightness(.9);
+.contact-form button:hover {
+  background-color: #375ad1;
+}
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--accent-color);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  display: none;
+  transition: 0.3s ease;
 }
 
-@media (max-width: 850px) {
-  /* SECTION 1: Hero */
-  .hero-section .text h2 {
-    font-size: 35px;
-  }
+.scroll-to-top:hover {
+  background-color: #ff3b3b;
 }
 
-@media (max-width: 740px) {
-  /* SECTION 1: Hero */
-  .hero-section {
-    flex-direction: column-reverse;
-  }
 
-  .hero-section .headshot img {
-    width: 300px;
-  }
-
-  /* SECTION 3: Testimony */
-  .testimony-section {
-    text-align: center;
-  }
-
-  .testimony-section .group {
-    flex-direction: column;
-  }
-
-  /* SECTION 4: Contact */
-  .contact-section .group {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 600px) {
-  /* NAVBAR */
-  nav {
-    padding: 0 20px;
-  }
-
-  nav .right a {
-    font-size: 22px;
-  }
-
-  nav .right a:last-child {
-    color: var(--text-color);
-    background-color: transparent;
-    padding: 0;
-  }
-
-  nav .right a span {
-    display: none;
-  }
-
-  /* SECTION 1: Hero */
-  .hero-section {
-    padding: 0 20px;
-  }
-
-  .hero-section .text h2 {
-    font-size: 30px;
-  }
-
-  /* SECTION 2: Skills */
-  .skills-section {
-    padding: 0 20px;
-  }
-
-  .skills-section .cells .cell span {
-    font-size: 16px;
-  }
-
-  /* SECTION 3: Testimony */
-  .testimony-section {
-    padding: 0 20px;
-  }
-
-  /* SECTION 4: Contact */
-  .contact-section {
-    padding: 0 20px;
-  }
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  background-color: #f1f1f1;
+  color: #555;
 }

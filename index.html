@@ -12,187 +12,91 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="enhanced.css">
 
-  <title>Portfolio</title>
+  <title>Matheskumar | Front-End Developer</title>
 </head>
 <body>
-  <!-- NAVBAR -->
-  <nav>
-    <div class="left">
-      <a href="/">Matheskumar S Msc(cs)</a>
-    </div>
-
-    <div class="right">
-      <a href="http://github.com" target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-github"></i>
-        <span>Github</span>
-      </a>
-      
-      <a href="https://www.linkedin.com/in/mathes-kumar-b801b0284/" target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-linkedin"></i>
-        <span>Linkedin</span>
-      </a>
-      
-      <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">
-        <i class="fa-solid fa-envelope"></i>
-        <span>Email</span>
-      
-      </a>
+  <script src="script.js"></script>
+  <nav class="navbar">
+    <div class="logo">Matheskumar S</div>
+    <div class="nav-links">
+      <a href="https://github.com" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://www.linkedin.com/in/mathes-kumar-b801b0284/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="mailto:mathesk787@gmail.com"><i class="fas fa-envelope"></i> Email</a>
     </div>
   </nav>
 
-  <main>
-    <!-- SECTION 1: Hero -->
-    <section class="hero-section">
-      <div class="text">
-        <h2>Hi, I'm Matheskumar 👋</h2>
-        <p>I am a passionate and detail-oriented Front-End Developer with a strong academic foundation in Computer Science and hands-on experience gained through internships and academic projects. Skilled in HTML, CSS, JavaScript, and responsive design, I enjoy building visually appealing and user-friendly web interfaces. I am seeking an opportunity to work with a dynamic team where I can grow as a developer and contribute to creating impactful digital experiences</p>
-
-        <div class="links">
-          <a href="#Skills">
-            <i class="fa-solid fa-code"></i>
-            <span>Skills</span>
-          </a>
-          
-          <a href="#Project">
-            <i class="fa-solid fa-pen"></i>
-            <span>Project</span>
-          </a>
-          <a href="#Internship">
-            <i class="fa-solid fa-pen"></i>
-            <span>Internship</span>
-          </a>
-          
-          <a href="#Contact">
-            <i class="fa-solid fa-envelope"></i>
-            <span>Contact</span>
-          </a>
-        </div>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm Matheskumar 👋</h1>
+      <p>Aspiring Front-End Developer passionate about crafting responsive and dynamic user interfaces using modern technologies like HTML, CSS, JavaScript, and Python.</p>
+      <div class="hero-buttons">
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#internship">Internship</a>
+        <a href="#contact">Contact</a>
       </div>
+    </div>
+    <div class="hero-image">
+      <img src="images/img%20white.jpg" alt="Profile Picture">
+    </div>
+  </header>
 
-      <div class="headshot">
-        <img src="images/img white.jpg" >
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <p class="section-intro">I have experience with HTML, CSS, JavaScript, and Python. I use HTML to structure web pages, CSS to design and style them, and JavaScript to add interactivity and dynamic features. With Python, I work on tasks like automation and scripting. These skills allow me to build interactive, visually appealing websites and tackle a variety of web-related challenges.</p>
+    <div class="skills-grid">
+      <div class="skill"><img src="images/html-logo.webp" alt="HTML">HTML</div>
+      <div class="skill"><img src="images/css-logo.webp" alt="CSS">CSS</div>
+      <div class="skill"><img src="images/javascript-logo.webp" alt="JavaScript">JavaScript</div>
+      <div class="skill"><img src="images/icons8-python-48.png" alt="Python">Python</div>
+      <div class="skill"><i class="fab fa-git-alt"></i> Git & GitHub</div>
+    </div>
+  </section>
+
+  <section id="projects" class="section project-section">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Hospital Management System <span class="project-tag">(UG Project)</span></h3>
+      <p>Developed a responsive web application for managing appointments and patient records using HTML, CSS, and JavaScript.</p>
+    </div>
+    <div class="project-card">
+      <h3>Virtual Lab System <span class="project-tag">(PG Project)</span></h3>
+      <p>Built using Django and Python, this project simulates a digital lab environment with responsive UI, admin control, and real-time modules.</p>
+      <div class="gallery">
+        <img src="images/project interface.jpg">
+        <img src="images/Experiment Module.jpg">
+        <img src="images/workenv module.jpg">
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- SECTION 2: Skills -->
-    <section id="skills" class="skills-section">
-      <h2>Skills</h2>
-      <div class="text">
-        I have a solid foundation in front-end development with hands-on experience using HTML, CSS, and JavaScript to create responsive and visually appealing web pages. I'm also comfortable working with Python for scripting and logic implementation. Additionally, I use Git and GitHub for version control and collaborative coding. I'm continuously improving my skills and exploring modern web development practices to grow as a developer.
-      </div>
+  <section id="internship" class="section internship-section">
+    <h2>Internship Experience</h2>
+    <div class="internship-card">
+      <h3><i class="fas fa-building"></i> Liveware IT Training Institute <span class="year">(2023)</span></h3>
+      <p>Worked on ML model development and testing using Python. Collaborated in a 5-member team for accuracy improvement and deployment.</p>
+    </div>
+    <div class="internship-card">
+      <h3><i class="fas fa-code"></i> Wiznloa IT Company <span class="year">(2024)</span></h3>
+      <p>Developed Django-based web modules and responsive frontend using HTML/CSS. Integrated backend APIs and enhanced session management.</p>
+    </div>
+  </section>
 
-      <div class="cells">
-        <div class="cell">
-          <img src="images/html-logo.webp" alt="html logo">
-          <span>HTML</span>
-        </div>
-        
-        <div class="cell">
-          <img src="images/css-logo.webp" alt="css logo">
-          <span>CSS</span>
-        </div>
-        
-        <div class="cell">
-          <img src="images/javascript-logo.webp" alt="javascript logo">
-          <span>JavaScript</span>
-        </div>
-        
-        <div class="cell">
-          <img src="images/icons8-python-48.png" alt="icons8-python-48 logo">
-          <span>Python</span>
-        </div>
-      </div>
-    </section>
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <p class="section-intro">I’m open to job opportunities, collaborations, or just a friendly chat. Reach out through the form below or connect on LinkedIn!</p>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
-    <!-- SECTION 3: Project Experience -->
-    <section id="Project" class="Project Experience">
-      <left>
-      <h2>Project</h2>
-
-      <div class="group">
-        <div class="person-details">
-          <img src="images/project-management.png">
-          <h1>UG</h1>
-          <h3> Hospital Management System (Built using HTML, CSS, and JavaScript )</h3>
-          <p>Created a web app for managing hospital appointments and patient data.
-            Used HTML, CSS, and JavaScript for frontend; simulated real-time data.
-            Designed user-friendly interface for admin and patient users.</p>
-            <hr>
-            <hr>
-            <h1>PG </h1>
-            <h3>Virtual Lab System (Built using HTML, CSS, Django, python)</h3>
-            <div class="Aboutproject">
-             <h3>Aboutproject</h3>
-              
-                <p>The Virtual Lab System is a web-based platform developed during my postgraduate studies to simulate digital laboratory environments for students and faculty.
-                 project was built using HTML, CSS, and JavaScript for the frontend, and Django with Python for the backend.
-                Users can interact with lab modules directly through the browser without needing to log in. 
-                The system presents a simple and responsive interface, where users can perform basic simulations and view outcomes in real-time.
-                It was designed with a focus on user experience, accessibility, and functional accuracy.</p>
-                <br>
-                <h1><u>Sample Images</u></h1>
-                <img src="images/project interface.jpg" style="width:600px;height:400px" align-items: "center;"><br>
-                <img src="images/Experiment Module.jpg" style="width:600px;height:400px" align-items: "left;" ><br>
-                <img src="images/workenv module.jpg" style="width:600px;height:400px" align-items: "right;">
-            </div>
-          </left>
-        </div>
-      </div>
-      <hr>
-      
-    </section>
-    <!--section 3.1 Internship-->
-    <section id="Internship" class="Internship-section">
-      <center><h1>Internship</h1>
-      <div class="group">
-        <div class="text">
-           <h3>Learning Intern | 2023</h3>
-          <h4> IT Training Institute, Madurai</h4>
-          
-          <p>Preprocessed large datasets and built ML models using Python.
-          Improved classification accuracy through feature scaling and model tuning.
-          Collaborated in a team of 5 to test and deploy learning models.</p>
-          <hr>
-          <h3>Web Development Intern Django & Python | 2024</h3>
-          <h4>Wiznloa IT Company (Online)</h4>
-          <ul>
-            <p>Developed Django-based web modules for client demos using HTML, CSS, and Python.
-             Designed responsive frontend pages and integrated backend APIs.
-            Enhanced form validation and session management in a simulated online lab system.</p>
-          
-          </div></center>
-
-        </div>
-      </div>
-      <hr>
-    </section>
-    
-
-
-    <!-- SECTION 4: Contact -->
-    <section id="contact" class="contact-section">
-      <h2>Contact</h2>
-
-      <div class="group">
-        <div class="text">
-          I’m always open to new opportunities, collaborations, or just a friendly tech chat. Whether you have a job opportunity, a cool project idea, or simply want to say hi — feel free to reach out. I’d love to hear from you!.
-        </div>
-
-        <form>
-          <label for="name">Name</label>
-          <input type="text" id="name">
-
-          <label for="email">Email</label>
-          <input type="email" id="email">
-
-          <label for="message">Message</label>
-          <textarea id="message" cols="30" rows="10"></textarea>
-
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
-    </section>
-  </main>
+  <footer>
+    <p>&copy; 2025 Matheskumar S. All rights reserved.</p>
+  </footer>
 </body>
 </html>
